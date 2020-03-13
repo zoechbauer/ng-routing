@@ -3,14 +3,14 @@
     <div class="list-group">
       <!-- url:  http://localhost:4200/servers/5/edit?allowEdit=1#loading  -->
       <a
-        [routerLink]="['/servers', 5, 'edit']"
+        [routerLink]="['/servers', server.id]"
         [queryParams]="{ allowEdit: '1' }"
         fragment="loading"
         class="list-group-item"
         *ngFor="let server of servers"
         style="cursor: pointer;"
       >
-        {{ server.name }}
+        {{ server.name }} (Id:{{ server.id }})
       </a>
     </div>
   </div>
@@ -20,6 +20,6 @@
     </button> -->
     <app-edit-server></app-edit-server>
     <hr />
-    <app-server></app-server>
+    <!-- <app-server></app-server> -->
   </div>
 </div>
