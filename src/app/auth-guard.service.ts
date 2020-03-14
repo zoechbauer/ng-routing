@@ -4,8 +4,7 @@ import {
   ActivatedRouteSnapshot,
   RouterStateSnapshot,
   Router,
-  CanActivateChild,
-  RouterState
+  CanActivateChild
 } from '@angular/router';
 import { AuthService } from './auth-service';
 import { Observable } from 'rxjs';
