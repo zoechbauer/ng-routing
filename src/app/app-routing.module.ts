@@ -49,7 +49,8 @@ const appRoutes: Routes = [
   // { path: '', redirectTo: 'not-found', pathMatch: 'full' }
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes, { useHash: true })],
+  // imports: [RouterModule.forRoot(appRoutes, { useHash: true })],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
